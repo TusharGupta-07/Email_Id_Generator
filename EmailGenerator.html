@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Email Id Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src=javascript.js></script>
+
+        <h1>Email Id Generator</h1>
+        <div class="Data">
+            <div class="information">
+                <table>
+                    <tr>
+                        <td>First Name<span id="req">*</span></td>
+                        <td><input type="text" id="FName" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name<span id="req">*</span></td>
+                        <td><input type="text" id="LName" required></td>
+                    </tr>
+                    <tr>
+                        <td>Company Name<span id="req">*</span></td>
+                        <td><input type="text" id="CName" required></td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td><select id="department">
+                            <option value="none">None</option>
+                            <option value="sales">Sales</option>
+                            <option value="development">Development</option>
+                            <option value="accounting">Accounting</option>
+                        </select></td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td colspan="2"><input type="button" id="submitBtn" value = "Generate"/></td></tr>
+                </table>
+            </div>
+
+            <div id="dataText">
+                <p id="showInfo"></p>
+                <p id="showInfoName"></p>
+                <p id="showInfoCompany"></p>
+                <p id="showInfodept"></p>
+                <p id="showInfoEmailId"></p>
+                <p id="showInfoPassword"></p>
+            </div>
+            
+            <div class="generator">
+                <table id="gen">
+                    <tr>
+                        <td id="RPass">Regenerate Password</td>
+                        <td id="REmail">Regenerate Email Id</td>
+                    </tr>
+                    
+                </table>
+            </div>
+                
+            
+                <div class="PassGen">
+                    <input type="radio" id="Auto" name="GeneratePass" value="Auto">
+                        <label for="Auto">Auto Generate Password</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="self" name="GeneratePass" value="self">
+                        <label for="self">Do it Yourself</label>
+                    <br>
+                    <br>
+                    <input type="button" id="submitRePass" value = "Generate"/>
+                </div>
+                <div id="subself">
+                    <div id="passHead">&nbsp;Enter Password<span id="req">*</span></div>
+                        <br>
+                        <input type="text" id="PasswordSelf" required>
+                        <br>
+                        <br>
+                        <input type="button" id="submitRePassSelf" value = "Submit"/>
+                </div>
+
+                <div class="EmailGen">
+                    <input type="radio" id="AutoE" name="GenerateEmail" value="AutoE">
+                        <label for="AutoE">Auto Generate Email Id</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="selfE" name="GenerateEmail" value="selfE">
+                        <label for="selfE">Do it Yourself</label>
+                    <br>
+                    <br>
+                    <input type="button" id="submitReEmail" value = "Generate"/>
+                </div>
+                <div id="subselfEmail">
+                        <div id="emailHead">Enter Email Id<span id="req">*</span></div>
+                        <br>
+                        <input type="text" id="EmailSelf" required>
+                        <br>
+                        <br>
+                        <input type="button" id="submitReEmailSelf" value = "Submit"/>
+                </div>
+                
+               
+
+            
+        </div>
+        
+    </body>
+</html>
