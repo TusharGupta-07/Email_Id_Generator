@@ -160,7 +160,7 @@ function ReGenerateEmailId(FName, LName, CName, dept)
     }
     else
     {
-        return (FName.toLowerCase() + "." + LName.toLowerCase() + "@" + dept + "." + CName.toLowerCase() + ".com");
+        return (FName.toLowerCase() + "." + LName.toLowerCase() + "." + randomChar + "@" + dept + "." + CName.toLowerCase() + ".com");
     }
 }
 
